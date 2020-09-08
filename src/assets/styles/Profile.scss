@@ -1,0 +1,68 @@
+.content {
+	grid-area: c;
+	display: grid;
+	grid-template-columns: 10fr 10fr;
+
+	
+	background-color: steelblue;
+	grid-template-areas:
+		"L R";
+		.ProfileContent {
+			grid-area: L;
+			background-color: #689cc7;
+			padding: 20px;
+			
+		}
+	.avatarInfo {
+		padding-left: 25px;
+		.profileContacts {
+			padding-left: 15px;
+			color: #333;
+		}
+	}
+	.post {
+		grid-area: R;
+		padding: 7px;
+		color: white;
+		border: 3px solid #999;
+		border-bottom: none;
+		border-top: none;
+		border-radius: 20px;
+		margin: 20px;
+		padding: 15px;
+		h3 {
+			padding: 5px;
+			color: rgb(15, 233, 15);
+		}
+		.like {
+			color: red;
+		}
+		.submit {
+			color: darkblue;
+		}
+		img {
+			width: 60px;
+			border-radius: 30px;
+		}
+		.postInput {
+			padding: 7px 0;
+		}
+		.postAreaInput {
+			color: blue;
+			border: 2px solid red;
+			border-radius: 3px;
+		}
+		.buttonAccept {
+			background-color: #4caf50; /* Green */
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+		}
+		.postItem {
+			padding: 7px 0;
+		}
+	}
+}

@@ -1,0 +1,102 @@
+@import "./assets/styles/FormsControls.scss";
+@import "./assets/styles/Dialogs.scss";
+@import "./assets/styles/header.scss";
+@import "./assets/styles/Profile.scss";
+@import "./assets/styles/Paginator.scss";
+@import "./assets/styles/user.scss";
+body {
+	margin: 0;
+	width: auto;
+	input {
+		outline: none;
+	}
+	textarea {
+		outline: none;
+	}
+	a {
+		outline: none;
+	}
+}
+.modalWindow {
+	width: auto;
+	height: auto;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -60%);
+	border: 1px solid #333;
+	border-radius: 10px;
+	padding: 15px;
+	background-color: #fff;
+	text-align: end;
+	input {
+		border: 1px solid #000;
+		padding: 5px;
+	}
+	button {
+		background-color: #4caf50; /* Green */
+		color: white;
+		padding: 5px 4px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+	}
+}
+.app-wrapper {
+	margin: 0 auto;
+	width: 1200px;
+	grid-template-areas:
+		"h h"
+		"n c";
+
+	display: grid;
+	grid-template-rows: 60px 1fr;
+	grid-template-columns: 2fr 10fr;
+}
+
+.nav {
+	text-align: left;
+	grid-area: n;
+	background-color: lightgreen;
+	display: flex;
+	flex-direction: column;
+	
+	a {
+		text-decoration: none;
+		color: black;
+	}
+	.active {
+		color: white;
+	}
+	.navButton {
+		padding: 10px;
+		background-color: goldenrod;
+		margin: 2px 0;
+		border: 0.5px lightgreen solid;
+		border-radius: 10px;
+	}
+	.FriendBarWrapper {
+		h2 {
+			padding: 10px;
+			margin: 0;
+			color: green;
+			font-size: 30px;
+		}
+		.FriendBar {
+			display: flex;
+			flex-wrap: wrap;
+
+			.FriendBarItems {
+				max-width: 60px;
+
+				margin: 5px 3px;
+				h3 {
+					margin: 0;
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+.FormControl {
+    color: hotpink;
+}
+.error {
+    color: red;
+    textarea {
+        border: 1px solid red;
+        
+    }
+    span {
+        color: red;
+    }
+}
+.logOutButton {
+    text-align: center;
+    :hover {
+        cursor: pointer;
+    }
+}

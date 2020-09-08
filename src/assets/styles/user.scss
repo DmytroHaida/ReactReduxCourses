@@ -1,0 +1,34 @@
+.userWallpaper {
+	background-color: rgb(226, 14, 14);
+	z-index: 5000;
+}
+.usersPage {
+	display: flex;
+	flex-direction: column;
+	background-color: lightsteelblue;
+	.usersPhoto {
+		width: 150px;
+	}
+
+	.userSwitcherPage {
+		overflow-y: scroll;
+		color: white;
+		width: 400px;
+		height: 30px;
+	}
+}
+.userWallpaper {
+	background-color: #fff;
+	.userPreloaderLayer {
+		opacity: 0.7;
+		height: 100vh;
+	}
+	.preloaderIMG {
+		width: 10%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(-50%, -50%);
+	}
+}
